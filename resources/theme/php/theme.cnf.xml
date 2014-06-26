@@ -1,0 +1,4 @@
+<config>
+  <name>PHP demo theme</name>
+  <engine>Cmf\View\Engine\Php</engine>
+</config>

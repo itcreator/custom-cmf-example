@@ -1,0 +1,13 @@
+<config>
+    <menu>
+        <main>
+            <Demo>
+                <title>demoMenuTitle</title>
+                <hint>demoMenuHint</hint>
+                <translate>CmfExample\Demo\Controller\DemoController</translate>
+                <weight>0</weight>
+                <url module="CmfExample\Demo" controller="Demo"/>
+            </Demo>
+        </main>
+    </menu>
+</config>

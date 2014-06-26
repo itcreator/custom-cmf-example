@@ -1,0 +1,35 @@
+{
+    "name": "custom-cmf/cmf-example",
+    "version": "dev",
+    "keywords": ["cmf", "cms", "framework", "php", "Custom CMF"],
+    "authors": [
+        {
+            "name": "Vital Leshchyk",
+            "email": "vitalleshchyk@gmail.com"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-0": {
+            "CmfExample\\Demo\\": "Module/Demo/src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.3",
+        "custom-cmf/cmf": "dev-master"
+    },
+    "include-path": ["vendor/doctrine/orm/lib", "."],
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-install-cmd": [
+            "Cmf\\Application\\Composer\\Script::installApp",
+            "Cmf\\Application\\Composer\\Script::initEnvironment",
+            "Cmf\\PublicResources\\Composer\\Script::installAssets"
+        ],
+        "post-update-cmd": [
+            "Cmf\\Application\\Composer\\Script::installApp",
+            "Cmf\\Application\\Composer\\Script::initEnvironment",
+            "Cmf\\PublicResources\\Composer\\Script::installAssets"
+        ]
+    }
+}

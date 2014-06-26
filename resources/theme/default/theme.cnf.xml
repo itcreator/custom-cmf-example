@@ -1,0 +1,6 @@
+<config>
+    <name>Twig demo theme</name>
+    <engine>Cmf\View\Engine\Twig</engine>
+    <render>Cmf\View\Theme\CustomTheme</render>
+    <parent>MODULE</parent>
+</config>

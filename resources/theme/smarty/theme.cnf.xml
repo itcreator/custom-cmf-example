@@ -1,0 +1,6 @@
+<config>
+    <name>Smarty theme</name>
+    <engine>Cmf\View\Engine\Smarty</engine>
+    <render>Cmf\View\Theme\CustomTheme</render>
+    <parent>default</parent>
+</config>
