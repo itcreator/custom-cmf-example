@@ -1,6 +1,10 @@
+<!--
+For using of the theme you must include smarty-view module on composer.json
+("custom-cmf/smarty-view": "dev-master")
+-->
 <config>
     <name>Smarty theme</name>
-    <engine>Cmf\View\Engine\Smarty</engine>
+    <engine>Cmf\SmartyView\Engine\Smarty</engine>
     <render>Cmf\View\Theme\CustomTheme</render>
     <parent>default</parent>
 </config>
